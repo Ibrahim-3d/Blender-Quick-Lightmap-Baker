@@ -1,0 +1,12 @@
+# Blender
+*.blend1
+*.blend2
+*.blend@
+*.tmp
+*.crash.txt
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.py

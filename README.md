@@ -20,3 +20,36 @@ A Blender add-on for quickly generating reusable lightmap bakes for web/Three.js
 
 ```text
 Edit > Preferences > Add-ons > Install
+Select the ZIP file.
+Enable Quick Lightmap Baker.
+Open the 3D View sidebar:
+N Panel > Lightmap
+Basic Workflow
+Select the source mesh objects.
+Set Bake Scope to Selected.
+Click Bake And Build New Baked Collection.
+Export the Baked_Lightmap_Output collection for Three.js/glTF.
+Output
+
+The add-on creates:
+
+Unbaked_Source
+Baked_Lightmap_Output
+
+The baked output objects use:
+
+UVMap → Baked Image → Emission → Material Output
+Three.js Usage
+const texture = textureLoader.load("LightMap_Bake.png");
+texture.flipY = false;
+
+material.map = texture;
+// Or use the exported emission material directly from glTF.
+Notes
+
+For the cleanest result, apply object scale before baking:
+
+Object > Apply > Scale
+
+Unapplied scale may create inconsistent UV density.
+```
