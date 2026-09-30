@@ -59,3 +59,11 @@ For the cleanest result, apply object scale before baking:
 - **Object > Apply > Scale**
 
 Unapplied scale may create inconsistent UV density.
+
+## License
+
+[GPL-3.0-or-later](LICENSE). The explicit program grant and a complete copy
+of the GPL travel inside the add-on directory. Keep its license files when
+packaging or redistributing it. See [LICENSING.md](LICENSING.md) for historical
+permissions and packaging requirements. The licenses of the separate
+LightBaker engine and web repositories are unchanged.
